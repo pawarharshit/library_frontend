@@ -11,11 +11,24 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/e8f58f23ba.js" crossorigin="anonymous"></script>
   <title>Hello, world!</title>
+
+  <script>
+    function nav_bar(){
+      
+      if(document.getElementById("menu").style.display == "none"){
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("right_page").className = "col-10";
+      } else{
+        document.getElementById("right_page").className = "col-12";
+        document.getElementById("menu").style.display = "none";
+      }
+    }
+  </script>
 </head>
 
 <body>
   <div class="container-fluid d-flex" style="padding-left: 0;padding-right: 0;">
-    <div class="col-2" style="background-color: rgb(49, 49, 49); height: 100%; margin: 0; padding: 0;">
+    <div id="menu" class="col-2" style="background-color: rgb(49, 49, 49); height: 100%; margin: 0; padding: 0;">
       <div class="row mx-4 my-2" style="color: white;">
         <h2>User Pannel</h2>
       </div>
@@ -39,10 +52,10 @@
             class="" style="margin-right: 5%; "></i> <a href="" style="color:white;">About us</a></div>
       </div>
     </div>
-    <div class="col-10" style="background-color: white;height: 100%; margin: 0; padding: 0;">
-      <div class="row d-flex justify-content-between"
+    <div id="right_page" class="col-10" style="background-color: white;height: 100%; margin: 0; padding: 0;">
+      <div class="row d-flex justify-content-between align-items-center"
         style="height: 9%;background-color: rgb(49, 49, 49); margin: 0; padding: 0;">
-        <i class="fas fa-bars my-3 mx-3" style="color: white;" id="nav-icon"></i>
+        <i id="nav" onclick="nav_bar()" class="fas fa-bars my-3 mx-3" style="cursor: pointer;color: white;" id="nav-icon"></i>
         <i class="fas fa-user my-3 mx-3" style="color: white;" id="profile"></i>
       </div>
       <div class="page" style="height:85% ; background-color: rgba(0,0,0, 0.1);">
@@ -68,7 +81,16 @@
     <footer style="height:6%;background-color: gba(0,0,0, 0.1);;"></footer>
   </div>
   </div>
+
+  <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+}
+</script>
   <!-- Optional JavaScript -->
+  
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
