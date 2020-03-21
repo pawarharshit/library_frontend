@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/issue_book_css.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e8f58f23ba.js" crossorigin="anonymous"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container-fluid d-flex" style="padding-left: 0;padding-right: 0;">
+    <div class="col-2" style="background-color: rgb(49, 49, 49); height: 100%; margin: 0; padding: 0;">
+      <div class="row mx-4 my-2" style="color: white;">
+        <h2>User Pannel</h2>
+      </div>
+      <div class="row name mx-5 my-1" style="color: white;">
+        <h3>Name</h3>
+      </div> <br>
+      <div class="">
+        <div class="row mx-2 my-1 px-2 py-2 nav_item" style="color:white;height: 8%;background-color: gray;"> <i class="fas fa-bars my-1 " class="" 
+            style="margin-right: 5%;"></i> <a  href="" style="color:white">Dashboard</a></div>
+        <div class="row mx-2 my-1 px-2 py-2 nav_item" style="color:white;height: 8%;"> <i class="fas fa-graduation-cap my-1 "class=""
+            style="margin-right: 5%;"></i> <a  href="" style="color:white">Change Password</a></div>
+        <div class="row mx-2  my-1 px-2 py-2 nav_item" style="color:white;height: 8%;"> <i class="fas fa-bars my-1 "class=""
+            style="margin-right: 5%;"></i> <a  href="" style="color:white">Issue Book</a></div>
+        <div class="row mx-2 my-1 px-2 py-2 nav_item" style="color:white;height: 8%;"> <i class="fas fa-bars my-1 "class=""
+            style="margin-right: 5%;"></i> <a  href="" style="color:white">Archive Book</a></div>
+        <div class="row mx-2 my-1 px-2 py-2 nav_item" style="color:white;height: 8%;"> <i class="fas fa-bars my-1 "class=""
+            style="margin-right: 5%; "></i> <a href="" style="color:white">Submit book requests</a></div>
+        <div class="row mx-2 my-1 px-2 py-2 nav_item" style="color:white;height: 8%;"> <i class="far fa-clock my-1 "class=""
+            style="margin-right: 5%;  nav_item"></i> <a href="" style="color:white">About us</a></div>
+      </div>
+    </div>
+    <div class="col-10" style="background-color: white;height: 100%; margin: 0; padding: 0;">
+      <div class="row d-flex justify-content-between"
+        style="height: 9%;background-color: rgb(49, 49, 49); margin: 0; padding: 0;">
+        <i class="fas fa-bars my-3 mx-3" style = "color: white;" id="nav-icon"></i>
+        <i class="fas fa-user my-3 mx-3" style = "color: white;" id="profile"></i>
+      </div>
+      <div class="page" style="height:85% ; background-color: rgba(0,0,0, 0.1);">
+        <div class="container d-flex justify-content-between" style="background-color: rgba(0,0,0, 0.1); height: 10%;">
+          <div class="d-flex">
+            <h2 class="py-2" style="font-size: 30px;">Dashboard</h2>
+            <p class="px-2 py-4">Control pannel</p>
+          </div>
+          <p class="py-4">Home > Issue Books</p>
+        </div>
+        <div class="container px-3" style="background-color: rgba(0,0,0, 0.1);height: 90%;">
+          <div class="d-flex flex-column justify-content-around align-items-center "
+            style="height: 100%;margin-left: 0;background-color: rgb(240, 240, 240); border-radius: 15px;border-top: 5px solid gray;">
+            <form action="" class="d-flex justify-content-around align-items-center" style="height: 10%;width: 80%; margin-top: 3%;">
+              <input type="text" style="height: 60%; width: 40%; padding-left: 15px;border-radius: 15px; outline: none;" placeholder="Book Name">
+              <input type="text" style="height: 60%; width: 40%; padding-left: 15px;border-radius: 15px; outline: none;" placeholder="ISBN">
+            </form>
+            <div class="d-flex flex-column align-items-center "
+              style="height: 80%;width: 95%;border: 2px solid black;margin-top: 2%;">
+              <div class="row" style="height:fit-content;width: 100%;">
+                <div class="col-2" style="border: 1px solid gray; font-weight: bold;">ISBN</div>
+                <div class="col-2" style="border: 1px solid gray; font-weight: bold;">Book Name</div>
+                <div class="col-2" style="border: 1px solid gray; font-weight: bold;">Book Desc</div>
+                <div class="col-3" style="border: 1px solid gray; font-weight: bold;">Category</div>
+                <div class="col-1" style="border: 1px solid gray; font-weight: bold;">Price</div>
+                <div class="col-1" style="border: 1px solid gray; font-weight: bold;">Qty</div>
+                <div class="col-1" style="border: 1px solid gray; font-weight: bold;">Borrowed</div>
+              </div>
+              <div class="row" style="height:fit-content;width: 100%;">
+                <div class="col-2" style="border: 1px solid gray; ">0071483462</div>
+                <div class="col-2" style="border: 1px solid gray; ">MORE Electronic Gadgets for the Evil Genius</div>
+                <div class="col-2" style="border: 1px solid gray; ">This much anticipated follow-up to the wildly popular cultclassic Electronic...</div>
+                <div class="col-3" style="border: 1px solid gray; ">Engineering</div>
+                <div class="col-1" style="border: 1px solid gray; ">5</div>
+                <div class="col-1" style="border: 1px solid gray; ">1</div>
+                <div class="col-1" style="border: 1px solid gray; ">1</div>
+              </div>
+              <div class="row" style="height:fit-content;width: 100%;">
+                <div class="col-2" style="border: 1px solid gray; ">0465031382</div>
+                <div class="col-2" style="border: 1px solid gray; ">When Gadgets Betray Us</div>
+                <div class="col-2" style="border: 1px solid gray; ">Looks at the important issues that are often overlooked in...</div>
+                <div class="col-3" style="border: 1px solid gray; ">Engineering</div>
+                <div class="col-1" style="border: 1px solid gray; ">5</div>
+                <div class="col-1" style="border: 1px solid gray; ">1</div>
+                <div class="col-1" style="border: 1px solid gray; ">0</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="height:6%;background-color: gba(0,0,0, 0.1);;"></footer>
+  </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
